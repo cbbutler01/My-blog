@@ -36,6 +36,7 @@ function createAndRenderBlog() {
 
         // Redirect to blog page
         window.location.href = 'blog.html';
+        
     } else {
         // Alert if not all fields are filled
         alert('Please fill out all fields.');
