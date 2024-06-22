@@ -1,6 +1,7 @@
 const backBtn = document.getElementById('backButton');
 const modeBtn = document.getElementById('displayMode');
-function goBack(){
-    window.location.href = 'form.html';
-};
-backBtn.addEventListener('click', goBack);
+import { loadUpBlogPosts, switchPage } from "./logic.js";
+
+backBtn.addEventListener('click',switchPage);
+//modeBtn.addEventListener('click', )
+window.onload = loadUpBlogPosts;

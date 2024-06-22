@@ -1,0 +1,32 @@
+:root {
+    /* Light mode colors */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-background: #f0f0f0;
+    --header-text-color: #333333;
+    --border-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    border-color:var( --border-color);
+}
+
+/* Dark mode colors */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-background: #1f1f1f;
+    --header-text-color: #cccccc;
+    --box-shadow: #ffffff;
+}
+form{
+    border-color:var(--border-color);
+    background-color: var(--background-color);
+}
