@@ -73,6 +73,10 @@ export function loadUpBlogPosts() {
         blogBoard.innerHTML = blogHTML;
     } else {
         // Display a message if there are no blogs
-        console.log('no blog dat found :(')
+        console.log('no blog found :(')
     }
+};
+
+export function toggleButton() {
+    document.body.classList.toggle('darkmode');
 };

@@ -1,0 +1,55 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 5px double; /* Double-lined border */
+}
+
+header h1 {
+    margin:0;
+    font-size: 2.5em;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+#blogBoard {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 2px solid;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

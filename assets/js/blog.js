@@ -1,7 +1,10 @@
 const backBtn = document.getElementById('backButton');
+import { loadUpBlogPosts, switchPage, toggleButton } from "./logic.js";
+
+document.addEventListener('DOMContentLoaded', () => {
 const modeBtn = document.getElementById('displayMode');
-import { loadUpBlogPosts, switchPage } from "./logic.js";
+modeBtn.addEventListener('click',toggleButton);
+});
 
 backBtn.addEventListener('click',switchPage);
-//modeBtn.addEventListener('click', )
 window.onload = loadUpBlogPosts;

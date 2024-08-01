@@ -1,8 +1,11 @@
-// import basic logic for blog
-const modeBtn = document.getElementById('displayMode')
 const submitBtn = document.getElementById('submit');
-import { createAndRenderBlog,  } from "./logic.js";
+import { createAndRenderBlog, toggleButton } from "./logic.js";
+
+// import basic logic for blog
+document.addEventListener('DOMContentLoaded', () => {
+const modeBtn = document.getElementById('displayMode')
+modeBtn.addEventListener('click', toggleButton);
+});
 
 // Add event listener to the submit button
-// modeBtn.addEventListener('click', );
 submitBtn.addEventListener('click', createAndRenderBlog);
