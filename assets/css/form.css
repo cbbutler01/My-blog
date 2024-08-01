@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 5px double; /* Double-lined border */
+}
+header button{
+    cursor: pointer;
+    padding: 5px;
+}
+
+header h1{
+    margin:0;
+    font-size: 2.5em;
+}
+form{
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 5px double;
+    border-left: 5px double;
+    border-right:5px double;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}

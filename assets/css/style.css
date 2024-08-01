@@ -1,0 +1,83 @@
+:root {
+    /* Light mode colors */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-background: #f0f0f0;
+    --header-text-color: #333333;
+    --border-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--header-text-color);
+    color: var(--header-background);
+}
+
+#blogBoard {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    border-color: var(--border-color);
+    background-color: var(--background-color);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    text-align: center;
+    border-top: 2px solid var(--border-color);
+}
+
+footer a {
+    color: var(--header-text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode colors */
+body.darkmode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-background: #1f1f1f;
+    --header-text-color: #cccccc;
+    --border-color: #ffffff;
+    --box-shadow: #ffffff;
+}

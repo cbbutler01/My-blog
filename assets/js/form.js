@@ -1,14 +1,11 @@
-const UsernameInput = document.getElementById('username')
-const titleInput = document.getElementById('title')
-const contentInput = document.getElementById('content')
+const submitBtn = document.getElementById('submit');
+import { createAndRenderBlog, toggleButton } from "./logic.js";
 
-function createAndRenderBlog() {
-    const blog = {
-        username: UsernameInput.value,
-        title: titleInput.value,
-        content: contentInput.value,
-    }
-    const blogs = localStorage.getitem('blogs')
-    blogs.push(blog)
-    localStorage.setitem(JSON.stringify(blog))
-};
+// import basic logic for blog
+document.addEventListener('DOMContentLoaded', () => {
+const modeBtn = document.getElementById('displayMode')
+modeBtn.addEventListener('click', toggleButton);
+});
+
+// Add event listener to the submit button
+submitBtn.addEventListener('click', createAndRenderBlog);
